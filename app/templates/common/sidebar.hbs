@@ -1,0 +1,59 @@
+<!-- aside -->
+<div id="aside" class="app-aside modal folded md nav-expand">
+    <div class="left navside indigo-900 dk" layout="column">
+        <div class="navbar navbar-md no-radius">
+            <!-- brand -->
+            <a class="navbar-brand">
+                <div ui-include="'../assets/images/logo.svg'"></div>
+                <img src="../assets/images/logo.png" alt=".">
+                <span class="hidden-folded inline">Flatkit</span>
+            </a>
+            <!-- / brand -->
+        </div>
+        <div flex class="hide-scroll">
+            <nav class="scroll nav-active-primary">
+
+                <ul class="nav" ui-nav>
+                    <li class="nav-header hidden-folded">
+                        <small class="text-muted">Main</small>
+                    </li>
+
+                    <li>
+                        <a href="#/home">
+                           <span class="nav-icon">
+                              <i class="material-icons">&#xe037;</i>
+                            </span>
+                            <span class="nav-text">Start Service</span>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#/settings">
+                           <span class="nav-icon">
+                              <i class="material-icons"></i>
+                            </span>
+                            <span class="nav-text">Settings</span>
+                        </a>
+                    </li>
+
+                    <li class="hidden-folded">
+                        <a href="#/help">
+                            <span class="nav-text">Help</span>
+                        </a>
+                    </li>
+
+                    <li class="hidden-folded">
+                        <a href="#/tutorial">
+                            <span class="nav-text">Tutorial</span>
+                        </a>
+                    </li>
+
+                </ul>
+            </nav>
+        </div>
+        <div flex-no-shrink>
+            <div ui-include="'../views/blocks/aside.bottom.0.html'"></div>
+        </div>
+    </div>
+</div>
+<!-- / aside -->

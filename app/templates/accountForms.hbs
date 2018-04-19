@@ -1,0 +1,62 @@
+<div class="padding">
+    <div class="row">
+        <div class="col-md-6">
+            <div class="box">
+                <div id="formHeaderAbs" class="box-header">
+                    <h2>Auto Binary Signals Account</h2>
+                    <small>Add your auto binary signals account here to start receiving SIGNALS
+                        {{absConnected}}
+                    </small>
+                    {{#if absConnected}}
+                        <span id="successAbs" class="label green">connected</span>
+                    {{/if}}
+                </div>
+                <div class="box-divider m-0"></div>
+                <div class="box-body">
+                    {{#if absConnected}}
+                        <form action="#/disconnectAbs" method="post" role="form">
+                            <button type="submit" id="btnAbsConnect" class="btn btn-outline rounded b-danger text-danger">Disconnect</button>
+                        </form>
+                    {{else}}
+                        <form action="#/connectAbs" method="post" role="form">
+                            <button type="submit" id="btnAbsConnect" class="btn white m-b">Connect</button>
+                        </form>
+                    {{/if}}
+                </div>
+            </div>
+        </div>
+        <div class="col-md-6">
+            <div class="box">
+                <div class="box-header">
+                    <h2>IQ Options Account Connect</h2>
+                    <small> Please connect your IQ Options Account to start sending trade signals
+                    </small>
+                </div>
+                <div class="box-divider m-0"></div>
+                <div class="box-body">
+                    <form action="#/connectIQOptions" method="post" role="form">
+                        <div class="form-group">
+                            <label for="exampleInputEmail1">Email address</label>
+                            <input type="email" class="form-control" id="exampleInputEmail1"
+                                   placeholder="Enter email">
+                        </div>
+                        <div class="form-group">
+                            <label for="exampleInputPassword1">Password</label>
+                            <input type="password" class="form-control" id="exampleInputPassword1"
+                                   placeholder="Password">
+                        </div>
+                        <button type="submit" class="btn white m-b">Connect</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-6 offset-md-3">
+            <form action="#/startTrading" method="post" role="form">
+                <button class="btn green btn-block">
+                    <i class="fa fa-play pull-left"></i>
+                    Start Trading
+                </button>
+            </form>
+        </div>
+    </div>
+</div>
